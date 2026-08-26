@@ -15,7 +15,8 @@
     "dtw-python=1.3.1"
 )
 
-.mofapy2_version <- "0.7.3"
+# Pinned version of mofapy2: defines the basilisk env and is what run_mofa() checks the reticulate install against.
+.mofapy2_version <- "0.7.5"
 
 #' @importFrom basilisk BasiliskEnvironment
 mofa_env <- BasiliskEnvironment("mofa_env", pkgname="MOFA2", packages=.mofapy2_dependencies, pip = paste0("mofapy2==",.mofapy2_version))
